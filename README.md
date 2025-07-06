@@ -153,7 +153,7 @@ npm run type-check
 2. Connect your repository to Vercel
 3. Deploy with zero configuration
 
-### Deployed LIknk: ([growthpro-ten,vercel.app](https://growthpro-ten.vercel.app/))
+### Deployed LIknk: ([growthpro-ten.vercel.app](https://growthpro-ten.vercel.app/))
 
 ## 🤝 Contributing
 
