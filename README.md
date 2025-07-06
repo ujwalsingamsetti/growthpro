@@ -1,73 +1,177 @@
-# Welcome to your Lovable project
 
-## Project info
+# Business Growth Dashboard
 
-**URL**: https://lovable.dev/projects/3c54cb04-d5ea-4c88-aa9c-09ff10d0834a
+A modern, responsive web application designed to help local businesses analyze their online presence and optimize their SEO performance. This dashboard provides real-time insights into business metrics, Google ratings, and AI-powered SEO recommendations.
 
-## How can I edit this code?
+![Business Growth Dashboard](https://img.shields.io/badge/React-18.3.1-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-Latest-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-38B2AC) ![License](https://img.shields.io/badge/License-MIT-green)
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **Business Analytics**: Get instant insights into your business performance
+- **Google Rating Integration**: Real-time display of Google Business ratings and reviews
+- **AI-Powered SEO Headlines**: Generate compelling headlines to boost local search visibility
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Real-time Data**: Live business metrics and performance indicators
+- **Modern UI/UX**: Clean, professional interface built with Tailwind CSS
+- **Fast Performance**: Built with Vite for lightning-fast development and production builds
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3c54cb04-d5ea-4c88-aa9c-09ff10d0834a) and start prompting.
+## 🛠️ Technology Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom animations
+- **UI Components**: Radix UI primitives with shadcn/ui
+- **State Management**: React hooks with context patterns
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **Notifications**: Sonner for toast notifications
+- **Data Fetching**: TanStack Query for server state management
 
-**Use your preferred IDE**
+## 📋 Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Before running this project, make sure you have the following installed:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (version 18 or higher)
+- npm, yarn, or pnpm package manager
 
-Follow these steps:
+## 🔧 Installation & Setup
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ujwalsingamsetti/growthpro.git
+   cd growthpro
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to view the application.
+
+## 🎯 Usage
+
+### Getting Started
+
+1. **Enter Business Information**: Input your business name and location in the form
+2. **Analyze Performance**: Click "Get Business Insights" to fetch analytics
+3. **View Metrics**: Review your Google rating, review count, and SEO score
+4. **Optimize Headlines**: Use the "Regenerate" button to create new SEO headlines
+5. **Track Progress**: Monitor your business performance indicators
+
+### Key Components
+
+- **Business Form**: Input interface for business details
+- **Metrics Card**: Comprehensive display of business analytics
+- **SEO Headlines**: AI-generated headlines for better search visibility
+- **Performance Indicators**: Visual representation of business metrics
+
+## 📁 Project Structure
+
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # Base UI components (shadcn/ui)
+│   ├── BusinessForm.tsx      # Business input form
+│   ├── BusinessMetricsCard.tsx # Metrics display component
+│   ├── Header.tsx            # Application header
+│   └── LoadingSpinner.tsx    # Loading state component
+├── pages/               # Application pages
+│   ├── Index.tsx        # Main dashboard page
+│   └── NotFound.tsx     # 404 error page
+├── services/            # API services and business logic
+│   └── businessApi.ts   # Business data service
+├── types/               # TypeScript type definitions
+│   └── business.ts      # Business-related types
+├── lib/                 # Utility functions
+│   └── utils.ts         # Common utility functions
+└── hooks/               # Custom React hooks
+    └── use-mobile.tsx   # Mobile detection hook
 ```
 
-**Edit a file directly in GitHub**
+## 🔌 API Documentation
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Business Data Endpoint
 
-**Use GitHub Codespaces**
+**Simulated Backend Functionality**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The application currently uses simulated API calls for demonstration purposes:
 
-## What technologies are used for this project?
+#### Get Business Data
+- **Method**: Simulated POST
+- **Payload**: `{ name: string, location: string }`
+- **Response**: 
+  ```json
+  {
+    "rating": 4.3,
+    "reviews": 127,
+    "headline": "Why Your Business is Location's Best Kept Secret in 2025"
+  }
+  ```
 
-This project is built with:
+#### Regenerate SEO Headlines
+- **Method**: Simulated GET
+- **Parameters**: Business name and location
+- **Response**: New AI-generated SEO headline
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🚀 Development Scripts
 
-## How can I deploy this project?
+```bash
+# Start development server
+npm run dev
 
-Simply open [Lovable](https://lovable.dev/projects/3c54cb04-d5ea-4c88-aa9c-09ff10d0834a) and click on Share -> Publish.
+# Build for production
+npm run build
 
-## Can I connect a custom domain to my Lovable project?
+# Preview production build
+npm run preview
 
-Yes, you can!
+# Lint code
+npm run lint
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Type check
+npm run type-check
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🌐 Deployment 
+
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with zero configuration
+
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+### Development Guidelines
+
+- Follow TypeScript best practices
+- Use Tailwind CSS for styling
+- Write descriptive commit messages
+- Ensure responsive design compatibility
+- Test on multiple devices and browsers
+---
+
+**Built with ❤️ for local businesses looking to grow their online presence.**
