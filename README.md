@@ -3,8 +3,7 @@
 
 A modern, responsive web application designed to help local businesses analyze their online presence and optimize their SEO performance. This dashboard provides real-time insights into business metrics, Google ratings, and AI-powered SEO recommendations.
 
-![Business Growth Dashboard](https://img.shields.io/badge/React-18.3.1-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-Latest-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-38B2AC) ![License](https://img.shields.io/badge/License-MIT-green)
-
+![Business Growth Dashboard](https://img.shields.io/badge/React-18.3.1-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-Latest-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-38B2AC) 
 ## 🚀 Features
 
 - **Business Analytics**: Get instant insights into your business performance
